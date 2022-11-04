@@ -1,3 +1,8 @@
+## BuckitUp Notes
+
+Check `Makefile` for some tools
+
+
 # Raspberry Pi 4 Model B (64-bit)
 
 [![Hex version](https://img.shields.io/hexpm/v/nerves_system_rpi4.svg "Hex version")](https://hex.pm/packages/nerves_system_rpi4)
