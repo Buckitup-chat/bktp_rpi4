@@ -1,3 +1,8 @@
+## BuckitUp Notes
+
+Check `Makefile` for some tools
+
+
 # Raspberry Pi 4 Model B (64-bit)
 
 [![CircleCI](https://circleci.com/gh/nerves-project/nerves_system_rpi4.svg?style=svg)](https://circleci.com/gh/nerves-project/nerves_system_rpi4)
