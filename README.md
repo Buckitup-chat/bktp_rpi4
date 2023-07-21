@@ -2,6 +2,16 @@
 
 Check `Makefile` for some tools
 
+### MacOS specific 
+
+MacOS filesystem is case insensitive by default. This might cause compilation issues.
+To prevent it create case sensitive filesystem for `~/.nerves/dl` at least.
+See - https://brianboyko.medium.com/a-case-sensitive-src-folder-for-mac-programmers-176cc82a3830
+
+### Other tricks
+
+Might need to tweak `post-build.sh` if fails on `dri` directory compaction.
+
 
 # Raspberry Pi 4 Model B (64-bit)
 
