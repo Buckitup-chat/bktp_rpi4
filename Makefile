@@ -11,3 +11,6 @@ config:
 
 build:
 	MIX_ENV=prod mix firmware
+
+forgotten:
+	mix archive.install hex nerves_bootstrap
