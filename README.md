@@ -8,6 +8,19 @@ MacOS filesystem is case insensitive by default. This might cause compilation is
 To prevent it create case sensitive filesystem for `~/.nerves/dl` at least.
 See - https://brianboyko.medium.com/a-case-sensitive-src-folder-for-mac-programmers-176cc82a3830
 
+Building `iptables` requires temp directory to be case sensitive as well.
+This can be worked around by replacing `mktemp` in `~/.nerves/artifacts/bktp_rpi4-portable-xxxxxxx/scripts/merge-squashfs`
+Like
+
+```bash
+workdir="/Volumes/cs_fs/nerves/squash_merge_tmp"
+rm -rf "$workdir"
+mkdir -p "$workdir"
+# workdir=$(mktemp -d 2>/dev/null || mktemp -d -t 'merge-squashfs-tmp')
+pushd "$workdir" >/dev/null
+```
+
+
 ### Other tricks
 
 Might need to tweak `post-build.sh` if fails on `dri` directory compaction.
